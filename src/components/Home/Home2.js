@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import photo from "../../Assets/passportSizePhoto.jpg"
 import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import "../../App.css"
 
 function Home2() {
   return (
@@ -52,7 +52,9 @@ function Home2() {
 
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={photo} className="img-fluid" alt="avatar" />
+              <div className="circular-image-container">
+                <img src={photo} className="img-fluid circular-image" alt="avatar" />
+              </div>
             </Tilt>
           </Col>
         </Row>

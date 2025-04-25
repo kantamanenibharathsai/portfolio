@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -9,22 +8,15 @@ import {
   DiPython,
   DiGit,
   DiBootstrap,
-  DiMysql,
   DiHtml5,
   DiCss3,
-  DiGoogleCloudPlatform
 } from "react-icons/di";
 import { SiMui } from "react-icons/si";
 import { DiSqllite } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import {
-  SiRedis,
   SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
@@ -33,7 +25,6 @@ import "../../App.css";
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* Frontend */}
       <Col xs={4} md={2} className="tech-icons">
         <div className="tech-icon-container">
           <DiJavascript1 className="tech-icon" />
@@ -88,8 +79,6 @@ function Techstack() {
         </div>
         <p className="tech-name">React Native</p>
       </Col>
-
-      {/* Backend */}
       <Col xs={4} md={2} className="tech-icons">
         <div className="tech-icon-container">
           <DiNodejs className="tech-icon" />
@@ -108,8 +97,6 @@ function Techstack() {
         </div>
         <p className="tech-name">Python</p>
       </Col>
-
-      {/* Databases */}
       <Col xs={4} md={2} className="tech-icons">
         <div className="tech-icon-container">
           <DiMongodb className="tech-icon" />
@@ -128,8 +115,6 @@ function Techstack() {
         </div>
         <p className="tech-name">Firebase</p>
       </Col>
-
-      {/* Version Control */}
       <Col xs={4} md={2} className="tech-icons">
         <div className="tech-icon-container">
           <DiGit className="tech-icon" />

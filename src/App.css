@@ -60,7 +60,7 @@
 .tech-icon {
   font-size: 3.5rem;
   margin-bottom: 10px;
-  color: #c770f0; /* Purple color matching your theme */
+  color: #c770f0; 
   transition: all 0.3s ease;
 }
 
@@ -76,7 +76,6 @@
   color: white;
 }
 
-/* Make responsive for smaller screens */
 @media (max-width: 767px) {
   .tech-icon {
     font-size: 2.8rem;
@@ -115,7 +114,6 @@
   font-size: 18px;
 }
 
-/* Ensure the button stays purple and text stays white when clicked */
 .download-btn:active, .download-btn:focus {
   background-color: #532684;
   color: white;
@@ -125,17 +123,27 @@
 
 
 .project-card-view {
-  height: 500px; /* Fixed height - adjust as needed */
+  max-height: 500px;
   margin-bottom: 20px;
   background-color: rgba(20, 20, 30, 0.8);
   border-radius: 8px;
   color: white;
-  /* transition: all 0.3s ease; */
   border: none;
 }
 
+
+.project-card-view2 {
+  margin-bottom: 20px;
+  background-color: rgba(20, 20, 30, 0.8);
+  border-radius: 8px;
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: column; 
+
+}
+
 .project-card-view:hover {
-  /* transform: scale(1.02); */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -146,19 +154,26 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   transition: all 0.3s ease; 
-  /* Add transition to image instead */
-  overflow: hidden; /* Ensure the scaled image stays within bounds */
+
+  overflow: hidden; 
 }
 
 .project-card-view:hover .card-img-top {
   transform: scale(1.05);
-   /* Scale only the image on hover */
 }
 
 
 .project-card-view .card-body {
   padding: 1.5rem;
-  height: 300px; /* Fixed body height */
+  height: 300px;
+}
+
+.project-card-view2 .card-body2 {
+  padding: 1.5rem;
+  display: flex; 
+  flex-direction: column; 
+  flex-grow: 1; 
+ 
 }
 
 .project-card-view .card-title {
@@ -167,15 +182,25 @@
   margin-bottom: 15px;
 }
 
+.project-description2 {
+  overflow-y: auto;
+ 
+  text-align: justify;
+  padding-right: 5px;
+  margin-bottom: 10px; 
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+
 .project-description {
   overflow-y: auto;
-  height: 180px; /* Adjust as needed */
+  height: 180px; 
   text-align: justify;
   padding-right: 5px;
   margin-bottom: 15px;
 }
 
-/* Custom scrollbar for webkit browsers */
+
 .project-description::-webkit-scrollbar {
   width: 5px;
 }
@@ -206,17 +231,145 @@
 }
 
 .project-description::-webkit-scrollbar-track {
-  background: rgba(60, 60, 80, 0.2); /* Darker track color */
+  background: rgba(60, 60, 80, 0.2);
   border-radius: 10px;
 }
 
 .project-description::-webkit-scrollbar-thumb {
-  background: purple; /* Subtle purple-ish thumb color */
+  background: purple; 
   border-radius: 10px;
 }
 
-/* For Firefox */
+
 .project-description {
   scrollbar-width: thin;
   scrollbar-color: rgba(120, 120, 150, 0.4) rgba(60, 60, 80, 0.2);
+}
+
+.circular-image-container {
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
+.circular-image {
+  border-radius: 50%; 
+  width: 80%; 
+  max-width: 300px;
+  height: auto;
+  object-fit: cover; 
+}
+
+
+@media (max-width: 768px) {
+  .circular-image {
+    width: 70%; 
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .circular-image {
+    width: 60%;
+    max-width: 150px;
+  }
+}
+
+
+.project-card-view-two {
+  background-color: rgba(20, 20, 30, 0.8);
+  border-radius: 8px;
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-view-two:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-body-two {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title-two {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-description-two {
+  overflow-y: auto;
+  text-align: justify;
+  font-size: 1.2rem;
+  padding-right: 5px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  flex-grow: 1;
+  max-height: 150px;
+  line-height: 30px;
+  margin-top: 18px;
+}
+
+.project-description-two::-webkit-scrollbar {
+  width: 5px;
+}
+
+.project-descriptio-two::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.project-description-two::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .project-card-view-two {
+    background-color: rgba(20, 20, 30, 0.8);
+  
+    border-radius: 8px;
+    color: white;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .card-title-two {
+      font-size: 1rem;
+      margin-bottom: 8px;
+  }
+
+  .project-description-two {
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+  }
+
+  .card-body-two {
+      padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-title-two {
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+  }
+
+  .project-description-two {
+      font-size: 0.8rem;
+      margin-bottom: 6px;
+      line-height: 22px;
+  }
+
+  .card-body-two {
+      padding: 0.8rem;
+  }
 }
