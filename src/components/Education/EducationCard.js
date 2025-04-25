@@ -3,7 +3,8 @@ import { Card } from "react-bootstrap";
 function EducationCard(props) {
     return (
         <Card className="project-card-view pt-2 pb-2">
-            <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+            <Card.Img variant="top" src={props.imgPath} alt="card-img"
+               />
             <Card.Body className="d-flex flex-column">
                 <h1 class="card-title-two">
                     {props.title1}

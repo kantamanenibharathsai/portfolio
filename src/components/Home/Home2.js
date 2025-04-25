@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
-import photo from "../../Assets/passportSizePhoto.jpg"
+import photo from "../../Assets/editedPhoto.jpg"
 import {
   AiFillGithub,
 } from "react-icons/ai";
@@ -53,7 +53,7 @@ function Home2() {
           <Col md={4} className="myAvtar">
             <Tilt>
               <div className="circular-image-container">
-                <img src={photo} className="img-fluid circular-image" alt="avatar" />
+                <img src={photo} className="circular-image" alt="avatar" />
               </div>
             </Tilt>
           </Col>
