@@ -28,6 +28,7 @@ function ExperiencePage() {
               title1="Junior Software Engineer"
               title2="Extended Web App Tech LLP"
               title3="April 2023 – January 2025"
+              demoLink={"https://www.extwebtech.com/"}
               description="Led frontend and backend development for responsive web/mobile apps using React JS, React Native, Node.js, and MongoDB. Optimized performance, implemented lazy loading, reusable components, and robust error handling."
             />
           </Col>

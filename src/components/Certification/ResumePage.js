@@ -39,7 +39,7 @@ function ResumePage() {
         <Row style={{ justifyContent: "center", paddingBottom: "30px", }}>
           <Col md={6} className="text-center">
             <br />
-              <button
+            <button
               onClick={handleDownload}
               disabled={isDownloading}
               className="btn btn-primary download-button"
