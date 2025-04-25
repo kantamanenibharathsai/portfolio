@@ -22,7 +22,7 @@ function EducationPage() {
                             title3="2016-20"
                             description={
                                 <>
-                                    CGPA: 8.75
+                                    <span style={{ textAlign: "center", fontSize: "20px" }}>CGPA: 8.75</span>
                                     <br />
                                     <br />
                                     Bachelor's degree program focused on the principles and applications of mechanical engineering.
@@ -57,7 +57,7 @@ function EducationPage() {
                             title3="2013-14"
                             description={
                                 <>
-                                    <span style={{ textAlign: "center" }}>CGPA: 9.0 / 10</span>
+                                    <span style={{ textAlign: "center",  fontSize: "20px" }}>CGPA: 9.0 / 10</span>
                                     <br />
                                     <br />
                                     Completed secondary school education, covering a broad range of subjects including mathematics, sciences, social studies, and languages.

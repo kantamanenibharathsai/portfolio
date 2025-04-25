@@ -352,6 +352,10 @@
       margin-bottom: 8px;
   }
 
+  .project-description-two span {
+    text-align: center;
+  }
+
   .card-body-two {
       padding: 1rem;
   }
