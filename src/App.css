@@ -1,0 +1,222 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.tech-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tech-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.tech-icon {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: #c770f0; /* Purple color matching your theme */
+  transition: all 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.15);
+}
+
+.tech-name {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+/* Make responsive for smaller screens */
+@media (max-width: 767px) {
+  .tech-icon {
+    font-size: 2.8rem;
+  }
+  
+  .tech-name {
+    font-size: 12px;
+  }
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6d3aa1;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #5d2c91;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-decoration: none;
+}
+
+.download-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Ensure the button stays purple and text stays white when clicked */
+.download-btn:active, .download-btn:focus {
+  background-color: #532684;
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+
+.project-card-view {
+  height: 500px; /* Fixed height - adjust as needed */
+  margin-bottom: 20px;
+  background-color: rgba(20, 20, 30, 0.8);
+  border-radius: 8px;
+  color: white;
+  /* transition: all 0.3s ease; */
+  border: none;
+}
+
+.project-card-view:hover {
+  /* transform: scale(1.02); */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.project-card-view .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: all 0.3s ease; 
+  /* Add transition to image instead */
+  overflow: hidden; /* Ensure the scaled image stays within bounds */
+}
+
+.project-card-view:hover .card-img-top {
+  transform: scale(1.05);
+   /* Scale only the image on hover */
+}
+
+
+.project-card-view .card-body {
+  padding: 1.5rem;
+  height: 300px; /* Fixed body height */
+}
+
+.project-card-view .card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  overflow-y: auto;
+  height: 180px; /* Adjust as needed */
+  text-align: justify;
+  padding-right: 5px;
+  margin-bottom: 15px;
+}
+
+/* Custom scrollbar for webkit browsers */
+.project-description::-webkit-scrollbar {
+  width: 5px;
+}
+
+.project-description::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.project-description::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.github-btn, .demo-btn {
+  background-color: #623686;
+  border-color: #623686;
+  transition: all 0.3s ease;
+}
+
+.github-btn:hover, .demo-btn:hover {
+  background-color: #512d75;
+  border-color: #512d75;
+}
+
+.project-description::-webkit-scrollbar {
+  width: 5px;
+}
+
+.project-description::-webkit-scrollbar-track {
+  background: rgba(60, 60, 80, 0.2); /* Darker track color */
+  border-radius: 10px;
+}
+
+.project-description::-webkit-scrollbar-thumb {
+  background: purple; /* Subtle purple-ish thumb color */
+  border-radius: 10px;
+}
+
+/* For Firefox */
+.project-description {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120, 120, 150, 0.4) rgba(60, 60, 80, 0.2);
+}
