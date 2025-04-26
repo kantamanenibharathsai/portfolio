@@ -9,7 +9,6 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { MdOutlineCastForEducation } from "react-icons/md";
-
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -26,6 +25,11 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  const navLinkStyle = {
+    fontSize: '0.9rem',
+    padding: '0.5rem 0.7rem',
+  };
+
   return (
     <Navbar
       expanded={expand}
@@ -35,7 +39,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          
+          {/* You can add your logo or brand name here */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -50,7 +54,12 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={() => updateExpanded(false)}
+                style={navLinkStyle}
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
@@ -59,6 +68,7 @@ function NavBar() {
                 as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
+                style={navLinkStyle}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
@@ -68,6 +78,7 @@ function NavBar() {
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
+                style={navLinkStyle}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -78,8 +89,9 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/Experience"
+                to="/experience"
                 onClick={() => updateExpanded(false)}
+                style={navLinkStyle}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Experience
               </Nav.Link>
@@ -89,6 +101,7 @@ function NavBar() {
                 as={Link}
                 to="/education"
                 onClick={() => updateExpanded(false)}
+                style={navLinkStyle}
               >
                 <MdOutlineCastForEducation style={{ marginBottom: "2px" }} /> Education
               </Nav.Link>
@@ -98,6 +111,7 @@ function NavBar() {
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
+                style={navLinkStyle}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}

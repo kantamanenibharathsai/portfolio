@@ -15,7 +15,7 @@ function Footer() {
 
   useEffect(() => {
     console.log(location.pathname);
-    if (location.pathname === "/resume") {
+    if (location.pathname === "/resume" || location.pathname === "/experience") {
       setFooterStyle({
         position: "fixed",
         bottom: 0,

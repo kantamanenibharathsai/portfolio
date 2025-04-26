@@ -252,64 +252,6 @@
   justify-content: center;
 }
 
-.circular-image {
-  border-radius: 50%; 
-  width: 80%; 
-  /* max-width: 400px; */
-  height: 370px;
-  object-fit: cover; 
-}
-
-
-@media (max-width: 768px) {
-  .circular-image {
-    width: 100%; 
-    max-width: 500px;
-    height: 400px;
-    /* max-width: 700px; */
-  }
-}
-
-@media (max-width: 1024px) {
-  .circular-image {
-    width: 100%; 
-    max-width: 500px;
-    height: 340px;
-    /* max-width: 700px; */
-  }
-}
-
-@media (max-width: 576px) {
-  .circular-image {
-    width: 100%;
-    height: 450px;
-    /* max-width: 300px; */
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .circular-image {
-    width: 100%;
-    height: 510px;
-    /* max-width: 300px; */
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .circular-image {
-    width: 100%;
-    height: 370px;
-    min-width: 280px;
-    /* max-width: 300px; */
-  }
-}
-
-@media (max-width: 376px) {
-  .circular-image {
-    width: 100%;
-    height: 340px;
-    /* max-width: 300px; */
-  }
-}
 
 
 .project-card-view-two {
@@ -411,5 +353,65 @@
 
   .card-body-two {
       padding: 0.8rem;
+  }
+}
+
+
+.circular-image {
+  border-radius: 50%; 
+  width: 80%; 
+  /* max-width: 400px; */
+  height: 370px;
+  object-fit: cover; 
+}
+
+
+@media (max-width: 768px) {
+  .circular-image {
+    width: 100%; 
+    max-width: 500px;
+    height: 400px;
+    /* max-width: 700px; */
+  }
+}
+
+@media (max-width: 1024px) {
+  .circular-image {
+    width: 100%; 
+    max-width: 500px;
+    height: 340px;
+    /* max-width: 700px; */
+  }
+}
+
+@media (max-width: 576px) {
+  .circular-image {
+    width: 100%;
+    height: 450px;
+    /* max-width: 300px; */
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .circular-image {
+    width: 100%;
+    height: 510px;
+    /* max-width: 300px; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .circular-image {
+    width: 100%;
+    height: 360px;
+    min-width: 275px;
+    /* max-width: 300px; */
+  }
+}
+
+@media (max-width: 376px) {
+  .circular-image {
+    width: 100%;
+    height: 340px;
+    /* max-width: 300px; */
   }
 }
